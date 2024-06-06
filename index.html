@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fasthand:wght@400&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Courgette:wght@400&display=swap" />
+    <style>
+      .fade-in {
+        animation: fadeIn 1s forwards;
+      }
+
+      .fade-out {
+        animation: fadeOut 1s forwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="yoga">
+      <section class="yoga-inner">
+        <div class="howbee-parent">
+          <h1 class="howbee">
+            <span>How</span>
+            <span class="bee">Bee</span>
+          </h1>
+          <div class="see-more-be-more-learn-mor-wrapper">
+            <div class="see-more fade-in-fade-out">
+              See More . Be More . Learn More
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="frame-parent">
+        <div class="frame-group">
+          <div class="blur-list-parent">
+            <div class="vector-parent">
+              <img
+                class="frame-child1"
+                loading="lazy"
+                alt=""
+                src="./public/vector-3646.svg" />
+            </div>
+          </div>
+          <div class="ellipse-parent">
+            <img
+              class="circle-blue"
+              src="public/ellipse4057.png"
+              alt="ellipse" />
+            <img
+              src="public/elipse4058.png"
+              alt="ellipse"
+              class="circle-green"
+              style="display: none" />
+            <div class="ellipse-group">
+              <div class="frame-child2">
+                <img
+                  src="./public/group-2085662785@2x.png"
+                  alt=""
+                  class="upside-down" />
+              </div>
+
+              <img class="globe-icon" alt="" src="./public/Group.png" />
+            </div>
+            <img
+              class="frame-child6"
+              loading="lazy"
+              alt=""
+              src="./public/vector-3630.svg" />
+            <img class="frame-child7" alt="" src="./public/vector-3632.svg" />
+            <img
+              class="curve-text-icon"
+              loading="lazy"
+              alt=""
+              src="./public/curve-text@2x.png" />
+          </div>
+        </div>
+        <div class="frame-container">
+          <div class="frame-wrapper">
+            <div class="with-howbee-parent">
+              <div class="with-howbee">
+                <span>with</span>
+                <span class="howbee1"> HowBee</span>
+              </div>
+              <img
+                class="frame-child10"
+                loading="lazy"
+                alt=""
+                src="./public/vector-3635.svg" />
+            </div>
+          </div>
+          <div class="unnoticed-unattended">Unnoticed . Unattended .</div>
+          <div class="unlock-new-conversations-wrapper">
+            <div class="unlock-new-conversations">Unlock New Conversations</div>
+          </div>
+        </div>
+        <img class="group-icon" alt="" src="./public/group-2085662785@2x.png" />
+        <div class="choose-the-hive">choose the hive</div>
+        <div class="hive-stands-with" style="display: none">
+          Hive stands with you
+        </div>
+        <div class="pngaaa-2-parent">
+          <img class="pngaaa-2-icon" alt="" src="./public/pngaaa-2@2x.png" />
+          <div class="pngaaa-1-parent">
+            <img class="pngaaa-1-icon" alt="" src="./public/pngaaa-2@2x.png" />
+            <img
+              class="curve-text-icon1"
+              alt=""
+              src="./public/curve-text-1@2x.png" />
+          </div>
+        </div>
+      </section>
+      <div class="yoga-child">
+        <div class="dont-follow-blindly-parent">
+          <div class="dont-follow-blindly fade-in-fade-out">
+            Don’t follow blindly
+          </div>
+
+          <img class="frame-child11" alt="" src="./public/vector-3637.svg" />
+        </div>
+      </div>
+      <div class="signs-of-change-container">
+        <p class="signs-of-change fade-in-fade-out">Signs of Change</p>
+        <p class="signs-of-hope fade-in-fade-out">Signs of Hope</p>
+      </div>
+      <section class="experience-yoga-parent">
+        <div class="experience-yoga">Experience Yoga</div>
+        <div class="sign-with-confidence">Sign With Confidence</div>
+        <div class="line-div"></div>
+        <div class="like-never-before">Like Never Before</div>
+        <div class="learn-with-howbee">Learn With HowBee</div>
+      </section>
+      <div class="yoga-item"></div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const ellipseGroup = document.querySelector(".ellipse-group");
+        const childElements = document.querySelector(".child-elements");
+        const chooseTheHive = document.querySelector(".choose-the-hive");
+        const hiveStandsWithYou = document.querySelector(".hive-stands-with");
+        const circleBlue = document.querySelector(".circle-blue");
+        const circleGreen = document.querySelector(".circle-green");
+        const dontFollowBlindly = document.querySelector(
+          ".dont-follow-blindly"
+        );
+        const signsOfChange = document.querySelector(".signs-of-change");
+        const signsOfHope = document.querySelector(".signs-of-hope");
+
+        ellipseGroup.style.transformOrigin = "bottom center"; // Set the transform origin to bottom center
+
+        ellipseGroup.addEventListener("click", function () {
+          const currentRotation =
+            ellipseGroup.style.transform || "rotate(0deg)";
+          const currentRotationValue = parseInt(
+            currentRotation.replace("rotate(", "").replace("deg)", "")
+          );
+          const newRotationValue = currentRotationValue + 180;
+          ellipseGroup.style.transform = `rotate(${newRotationValue}deg)`;
+
+          // Add fade-out class to the current visible text
+          if (chooseTheHive.style.display !== "none") {
+            chooseTheHive.classList.add("fade-out");
+            circleBlue.classList.add("fade-out");
+            dontFollowBlindly.classList.add("fade-out");
+            setTimeout(() => {
+              chooseTheHive.style.display = "none";
+              chooseTheHive.classList.remove("fade-out");
+              hiveStandsWithYou.style.display = "block";
+              hiveStandsWithYou.classList.add("fade-in");
+              setTimeout(() => {
+                hiveStandsWithYou.classList.remove("fade-in");
+              }, 1000);
+            }, 1000);
+
+            setTimeout(() => {
+              circleBlue.style.display = "none";
+              circleBlue.classList.remove("fade-out");
+              circleGreen.style.display = "block";
+              circleGreen.classList.add("fade-in");
+              setTimeout(() => {
+                circleGreen.classList.remove("fade-in");
+              }, 1000);
+            }, 1000);
+
+            setTimeout(() => {
+              dontFollowBlindly.style.display = "none";
+              dontFollowBlindly.classList.remove("fade-out");
+              signsOfChange.style.display = "block";
+              signsOfChange.classList.add("fade-in");
+              signsOfHope.style.display = "block";
+              signsOfHope.classList.add("fade-in");
+              setTimeout(() => {
+                signsOfChange.classList.remove("fade-in");
+                signsOfHope.classList.remove("fade-in");
+              }, 1000);
+            }, 1000);
+          } else {
+            hiveStandsWithYou.classList.add("fade-out");
+            circleGreen.classList.add("fade-out");
+            setTimeout(() => {
+              hiveStandsWithYou.style.display = "none";
+              hiveStandsWithYou.classList.remove("fade-out");
+              chooseTheHive.style.display = "block";
+              chooseTheHive.classList.add("fade-in");
+              setTimeout(() => {
+                chooseTheHive.classList.remove("fade-in");
+              }, 1000);
+            }, 1000);
+
+            setTimeout(() => {
+              circleGreen.style.display = "none";
+              circleGreen.classList.remove("fade-out");
+              circleBlue.style.display = "block";
+              circleBlue.classList.add("fade-in");
+              setTimeout(() => {
+                circleBlue.classList.remove("fade-in");
+              }, 1000);
+            }, 1000);
+
+            setTimeout(() => {
+              dontFollowBlindly.style.display = "block";
+              dontFollowBlindly.classList.add("fade-in");
+              signsOfChange.style.display = "none";
+              signsOfChange.classList.remove("fade-in");
+              signsOfHope.style.display = "none";
+              signsOfHope.classList.remove("fade-in");
+              setTimeout(() => {
+                dontFollowBlindly.classList.remove("fade-in");
+              }, 1000);
+            }, 1000);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
